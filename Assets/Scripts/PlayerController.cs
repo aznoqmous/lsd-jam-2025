@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float _mouseSteps = 5;
     [SerializeField] float _mouseAngle = 30;
 
+    [SerializeField] Rigidbody _rigidbody;
     Vector3 _rotation;
 
 
@@ -25,10 +26,10 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        Vector2 movement = action.Player.Move.ReadValue<Vector2>();
+        Vector2 movement = action.Player.Move.ReadValue<Vector2>() * Time.deltaTime * _moveSpeed;
         movement = movement.Rotate(-transform.localEulerAngles.y);
-        transform.position = transform.position +  new Vector3(movement.x, 0, movement.y) * Time.deltaTime * _moveSpeed;
-
+        _rigidbody.linearVelocity = new Vector3(movement.x, _rigidbody.linearVelocity.y, movement.y);
+        //_rigidbody.AddForce(new Vector3(movement.x, 0, movement.y) * Time.deltaTime * _moveSpeed, ForceMode.VelocityChange);
 
         _rotation += new Vector3(-Mouse.current.delta.value.y,         Mouse.current.delta.value.x, 0) * _mouseSpeed;
         _rotation = new Vector3(Mathf.Clamp(_rotation.x , - _mouseAngle, _mouseAngle), _rotation.y, 0);
