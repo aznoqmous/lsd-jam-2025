@@ -311,7 +311,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f4cfc211f0da22a45be4a7adcb6b184d, type: 2}
+  - {fileID: 2100000, guid: 02cb835184292f8408dc9d0ebc26abbb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -480,28 +480,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SwapTexMax
   tex: {fileID: 2800000, guid: 5297488db89aa8547ab41e695dbcbbd6, type: 3}
   tex2: {fileID: 2800000, guid: d6d013fd255763e4ca4d3510c1fdb8a7, type: 3}
-  inputActions:
-    m_Name: Input Actions
-    m_Id: 953df120-2e91-4831-94dd-a75caaf1f973
-    m_Asset: {fileID: 0}
-    m_Actions:
-    - m_Name: Interact
-      m_Type: 1
-      m_ExpectedControlType: Button
-      m_Id: 08ecd84d-f6d5-4ab0-bcfd-abcf84ef748a
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Bindings:
-    - m_Name: 
-      m_Id: 7ff7f3c4-c758-4bc9-9cf1-a1ece69a55c7
-      m_Path: <Keyboard>/anyKey
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Interact
-      m_Flags: 0
 --- !u!4 &731310192
 Transform:
   m_ObjectHideFlags: 0
@@ -583,7 +561,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f4cfc211f0da22a45be4a7adcb6b184d, type: 2}
+  - {fileID: 2100000, guid: 02cb835184292f8408dc9d0ebc26abbb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -694,7 +672,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f4cfc211f0da22a45be4a7adcb6b184d, type: 2}
+  - {fileID: 2100000, guid: 02cb835184292f8408dc9d0ebc26abbb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
