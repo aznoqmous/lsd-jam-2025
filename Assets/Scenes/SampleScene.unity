@@ -5856,7 +5856,7 @@ Light:
   m_GameObject: {fileID: 410087039}
   m_Enabled: 1
   serializedVersion: 11
-  m_Type: 1
+  m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.5
   m_Range: 10
@@ -6365,10 +6365,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c3c262c952af64eb8b8b1e49e8315c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  _moveSpeed: 1000
-  _mouseSpeed: 0.3
-  _mouseSteps: 5
+  _moveSpeed: 500
+  _mouseSpeed: 0.6
+  _mouseSteps: 3
   _mouseAngle: 30
+  _gravity: 30
   _rigidbody: {fileID: 980137090}
 --- !u!4 &980137088
 Transform:
@@ -6431,7 +6432,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
