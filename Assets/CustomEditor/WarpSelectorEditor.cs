@@ -13,6 +13,8 @@ public class SceneObjectSelectorEditor : Editor
 
     public override void OnInspectorGUI()
     {
+        if (Application.isPlaying) return;
+
         serializedObject.Update();
 
         var sceneProp = serializedObject.FindProperty("scene");
